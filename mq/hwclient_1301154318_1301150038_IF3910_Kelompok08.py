@@ -5,7 +5,7 @@ context = zmq.Context() #object zmq memanggil method konteks
 
 print("Connecting to hello world server...") #client mencetak string yang sudah ditentukan
 socket = context.socket(zmq.REQ) #variabel konteks memanggil method socket untuk membuat socket lalu disimpan ke dalam variabel
-socket.connect("tcp://localhost:5555") #varabel socket memanggil method bind untuk menentukan port yang digunakan
+socket.connect("tcp://192.168.0.23:1627") #varabel socket memanggil method bind untuk menentukan port yang digunakan
 
 
 for request in range(10):
